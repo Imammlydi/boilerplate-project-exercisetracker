@@ -29,6 +29,11 @@ app.post('/api/users', (req, res) => {
   res.json(newUser);
 });
 
+// Get all users
+app.get('/api/users', (req, res) => {
+  res.json(users);
+});
+
 // Add exercises
 app.post('/api/users/:_id/exercises', (req, res) => {
   const { _id } = req.params;
